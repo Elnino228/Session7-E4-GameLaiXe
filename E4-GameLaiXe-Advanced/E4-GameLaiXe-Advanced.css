@@ -1,0 +1,32 @@
+
+#myCanvas{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background: url("https://ak8.picdn.net/shutterstock/videos/1009479518/thumb/1.jpg");
+    background-size: cover;
+}
+#myCanvas2{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+#scores{
+    color: red;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 50px;
+    position: relative;
+    top: -40px;
+    left: 30px;
+}
+#scoresBoard{
+    display: inline-block;
+    position: relative;
+    width: 95px;
+    height: 100px;
+
+}
+#game{
+    display: inline-block;
+}

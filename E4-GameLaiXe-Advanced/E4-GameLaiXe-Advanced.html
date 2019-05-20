@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="E4-GameLaiXe-Advanced.css">
+</head>
+<body onkeydown="game.car.changeOrientation(event)">
+<h2>Game: Driver</h2>
+<fieldset id="game">
+    <form>
+        <h3>Select game level:</h3>
+        <input type="radio" id="easy" value="easy"  onclick="selectLevel(this.value)" checked>Easy<br>
+        <input type="radio" id="medium" value="medium" onclick="selectLevel(this.value)" >Medium<br>
+        <input type="radio" id="hard" value="hard" onclick="selectLevel(this.value)" >Hard<br><br>
+        <input type="button" id="play" value="Play" onclick="playReady()">
+        <input type="button" id="reset" value="Reset" onclick="playReset()">
+    </form>
+    <fieldset id="scoresBoard">
+        <legend>Scores:</legend>
+        <p id="scores" >0</p>
+    </fieldset>
+</fieldset>
+<br><br>
+<image src="https://i2.wp.com/pixelvulture.com/wp-content/uploads/2017/07/Fast-Cars-Lambo-e1499428488632.jpg?resize=1000%2C483" style="width: 170px ;height: 100px"></image>
+<canvas id="myCanvas" width='400px' height='600px' style="border: 1px solid #d3d3d3;"></canvas>
+<canvas id="myCanvas2" width='400px' height='600px' style="border: 1px solid #d3d3d3;"></canvas>
+
+<script src="E4-GameLaiXe-Advanced.js"></script>
+</body>
+</html>
